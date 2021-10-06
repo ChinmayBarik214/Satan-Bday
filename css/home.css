@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(340, 11%, 11%);
+    background-image: url("../images/pattern.png");
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "banner banner"
+    "image text"
+    "more more";
+    min-height: 800px;
+    width: 100%;
+    padding: 0;
+    margin: 20 0 0 0;
+    margin-top: 50px;
+}
+.item1{
+    grid-area: banner;
+    min-height: 400px;
+    background-image: url("../images/banner\ animation.gif");
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+}
+.item2{
+    grid-area: image;
+    max-height: 400px;
+    background-image: url("../images/p1.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item3{
+    grid-area: text;
+    max-height: 400px;
+    background-image: url("../images/p2.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item4{
+    grid-area: more;
+    min-height: 40px;
+    background-color: #341671;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 40%;
+    padding-top: 6px
+}
+h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 5em;
+    letter-spacing: -2px;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    position: relative;
+    top: 20%;
+    font-family: 'Josefin Sans', sans-serif;
+   }
+.black-box{
+    margin: 60px;
+    background-color: rgba(0,0,0,0.5);
+}
